@@ -1,7 +1,7 @@
-package com.oriente.compiler;
+package com.alex.compiler;
 
 import com.google.auto.service.AutoService;
-import com.oriente.annotation.Flag;
+import com.alex.annotation.Flag;
 import com.squareup.javapoet.JavaFile;
 import com.squareup.javapoet.MethodSpec;
 import com.squareup.javapoet.TypeSpec;
@@ -46,7 +46,7 @@ public class FlagAnnotationProcessor extends AbstractProcessor {
                 .addMethod(main)
                 .build();
 
-        JavaFile javaFile = JavaFile.builder("com.oriente.aptdemo", helloWorld)
+        JavaFile javaFile = JavaFile.builder("com.alex.aptdemo", helloWorld)
                 .build();
         try {
             javaFile.writeTo(processingEnv.getFiler());

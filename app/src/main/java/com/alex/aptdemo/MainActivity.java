@@ -1,10 +1,8 @@
-package com.oriente.aptdemo;
+package com.alex.aptdemo;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
-
-import com.oriente.annotation.Flag;
+import com.alex.annotation.Flag;
 
 @Flag
 public class MainActivity extends AppCompatActivity {
